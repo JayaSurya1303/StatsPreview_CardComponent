@@ -1,0 +1,92 @@
+body {
+    background-color: hsl(233, 47%, 7%);    
+    margin: 100px auto;
+}
+
+.card-container {
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 0.3125rem;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.card-content {
+    margin: auto;
+}
+
+.card-header {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    padding: 0 60px;
+    font-size: 1rem;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.card-description {
+    color:hsla(0, 0%, 100%, 0.75);
+    padding: 0 60px;
+    font-family: system-ui;
+    font-size: 0.815rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+ 
+.card-footer h4 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 0px;
+}
+
+.card-footer p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.625rem;
+}
+
+.card-img {
+    width: 100%;
+    border-top-left-radius: calc(0.3125rem - 1px);
+    border-bottom-left-radius: calc(0.3125rem - 1px);
+    overflow: hidden;
+}
+
+@media only screen and (max-width:600px) {
+
+
+    .card-container {
+        display: grid;
+        text-align: center;
+        width: 80%;
+    }
+
+    .card-header {
+        font-family: 'Lexend Deca';
+        padding: 0 35px;
+        font-size: 1.0625rem;
+    }
+
+    .card-description {
+        padding: 0 35px;
+        font-size: 0.875rem;
+    }
+    
+    .card-footer {
+        display: block;
+        padding-bottom: 15px;
+    }
+
+    .card-img {
+        width: 100%;
+        border-radius: 0px;
+        border-top-left-radius: calc(0.3125rem - 1px);
+        border-top-right-radius: calc(0.3125rem - 1px);
+    }
+}
